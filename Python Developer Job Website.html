@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Python Developer Jobs 2026</title>
+
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        background:#f4f6f8;
+        margin:0;
+    }
+
+    header{
+        background:#0d6efd;
+        color:white;
+        padding:20px;
+        text-align:center;
+    }
+
+    .search-box{
+        text-align:center;
+        margin:20px;
+    }
+
+    input{
+        padding:10px;
+        width:300px;
+        border-radius:6px;
+        border:1px solid #ccc;
+    }
+
+    .container{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:20px;
+        padding:20px;
+    }
+
+    .job-card{
+        background:white;
+        width:320px;
+        padding:20px;
+        border-radius:10px;
+        box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .job-card h3{
+        margin:0;
+        color:#0d6efd;
+    }
+
+    .company{
+        font-weight:bold;
+        margin-top:5px;
+    }
+
+    .apply-btn{
+        margin-top:15px;
+        padding:10px;
+        background:#0d6efd;
+        color:white;
+        border:none;
+        border-radius:6px;
+        cursor:pointer;
+        width:100%;
+    }
+
+    .apply-btn:hover{
+        background:#084298;
+    }
+
+    footer{
+        text-align:center;
+        padding:20px;
+        background:#222;
+        color:white;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🐍 Python Developer Jobs 2026</h1>
+    <p>Latest Python job vacancies (Updated Daily)</p>
+</header>
+
+<div class="search-box">
+    <input type="text" id="search" placeholder="Search by role or company..." onkeyup="filterJobs()">
+</div>
+
+<div class="container" id="jobContainer">
+
+    <!-- Job 1 -->
+    <div class="job-card">
+        <h3>Python Developer</h3>
+        <p class="company">Infosys</p>
+        <p>📍 Location: Bangalore, India</p>
+        <p>💰 Salary: ₹6-10 LPA</p>
+        <p>🕒 Posted: Feb 2026</p>
+        <p>Skills: Python, Django, SQL, AWS</p>
+        <button class="apply-btn">Apply Now</button>
+    </div>
+
+    <!-- Job 2 -->
+    <div class="job-card">
+        <h3>Junior Python Developer</h3>
+        <p class="company">TCS</p>
+        <p>📍 Location: Chennai</p>
+        <p>💰 Salary: ₹4-7 LPA</p>
+        <p>🕒 Posted: Feb 2026</p>
+        <p>Skills: Python, Flask, REST API</p>
+        <button class="apply-btn">Apply Now</button>
+    </div>
+
+    <!-- Job 3 -->
+    <div class="job-card">
+        <h3>Python Data Engineer</h3>
+        <p class="company">Zoho</p>
+        <p>📍 Location: Coimbatore</p>
+        <p>💰 Salary: ₹8-14 LPA</p>
+        <p>🕒 Posted: Feb 2026</p>
+        <p>Skills: Python, Pandas, SQL, Cloud</p>
+        <button class="apply-btn">Apply Now</button>
+    </div>
+
+    <!-- Job 4 -->
+    <div class="job-card">
+        <h3>AI Python Developer</h3>
+        <p class="company">Freshworks</p>
+        <p>📍 Location: Remote</p>
+        <p>💰 Salary: ₹10-18 LPA</p>
+        <p>🕒 Posted: Feb 2026</p>
+        <p>Skills: Python, ML, FastAPI</p>
+        <button class="apply-btn">Apply Now</button>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Python Job Portal | Built for Developers</p>
+</footer>
+
+<script>
+function filterJobs(){
+    let input = document.getElementById("search").value.toLowerCase();
+    let cards = document.querySelectorAll(".job-card");
+
+    cards.forEach(card=>{
+        let text = card.innerText.toLowerCase();
+        card.style.display = text.includes(input) ? "block" : "none";
+    });
+}
+</script>
+
+</body>
+</html>
